@@ -1,0 +1,15 @@
+package net;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class HTTPURL {
+
+	public static void main(String[] args) {
+		URL hp = new URL("http://google.com");
+		HttpURLConnection hpcon=(HttpURLConnection) hp.openConnection();
+		
+
+	}
+
+}

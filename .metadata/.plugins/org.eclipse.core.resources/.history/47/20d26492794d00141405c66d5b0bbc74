@@ -1,0 +1,17 @@
+package first;
+import javax.swing.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// center of my future program
+		JFrame mainFrame = new JFrame();
+		JButton button=new JButton();
+		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		mainFrame.getContentPane().add(button);
+		mainFrame.setSize(300,300);
+		mainFrame.setVisible(true);
+
+	}
+
+}

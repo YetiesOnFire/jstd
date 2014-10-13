@@ -1,0 +1,30 @@
+package net;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class IOagain {
+
+	public static void main(String[] args) throws IOException{
+		int str;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new FileWriter("newtext.txt"));
+		
+		int exit=-1;
+		
+		str = br.read();
+		bw.write(str);
+
+		if(str==exit) {
+			System.out.println("OUT");
+		}
+		br.close();
+		bw.close();
+		}
+			
+			
+	
+}

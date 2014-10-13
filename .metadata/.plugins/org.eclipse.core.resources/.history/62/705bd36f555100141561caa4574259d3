@@ -1,0 +1,30 @@
+package net;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class IOagain {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		String str;
+		String exit="exit";
+	
+		
+		
+			while(((str=br.readLine()))!="Q") {
+				bw.write(str);
+			if (str.equalsIgnoreCase(exit){
+				br.close();
+				bw.close();
+			
+			}
+			}
+			
+		
+		
+}}

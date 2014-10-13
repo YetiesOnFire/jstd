@@ -1,0 +1,27 @@
+package net;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStreamWriter;
+
+public class IOagain {
+
+	public static void main(String[] args) {
+		try(
+		InputStream br = (System.in);
+		OutputStreamWriter bw = new FileWriter("newtext.txt");
+		){
+			int c;
+			while((c=br.read())!=-1){
+				bw.write(c);
+			}
+		}catch(IOException e) {
+			System.out.println(e);
+		}
+		
+		}
+			
+			
+	
+}

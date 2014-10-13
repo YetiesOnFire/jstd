@@ -1,0 +1,35 @@
+package net;
+import java.io.IOException;
+import java.net.*;
+public class Main {
+
+	public static void main(String[] args) throws UnknownHostException{
+		InetAddress Address = InetAddress.getLocalHost();
+		System.out.println(Address);
+		
+		Address = InetAddress.getByName("www.habrahabr.ru");
+		System.out.println(Address);
+		InetAddress sw[] = InetAddress.getAllByName("www.nba.com");
+			for(int i=0; i<sw.length; i++)
+				System.out.println(sw[i]);
+	
+			Socket s;
+			
+			
+			
+			try {
+				s= new Socket("localhost", 3308);
+				
+			} catch (IOException e) {
+						System.out.println(e);
+			}
+			s.isConnected();
+			
+			
+			
+			
+			
+			
+	}
+
+}

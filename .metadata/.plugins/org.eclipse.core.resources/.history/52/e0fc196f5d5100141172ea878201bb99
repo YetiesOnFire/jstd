@@ -1,0 +1,34 @@
+package net;
+import java.net.*;
+
+import java.io.*;
+
+
+public class WHOIStest {
+
+	public static void main(String[] args) throws Exception {
+				
+		int c;
+		try(Socket sock= new Socket("whois.internic.net", 43)){
+		InputStream in = sock.getInputStream();
+		OutputStream out= sock.getOutputStream();
+		
+		//Посылка запрроса в байтах так как интернет только и в них и работает.
+		String str= (args.length == 0 ? "www.habrahabr.ru":args[0])+"\n";
+//		String str= "www.habrahabr.ru" +"\n";
+		byte buf[]=str.getBytes();
+		out.write(buf);
+		
+		
+		
+		while((c= in.read())!=-1) {
+			System.out.print((char)c);
+			}
+		}	catch(Exception e) {
+			System.out.println(e);
+		}
+		
+		
+	}
+
+}

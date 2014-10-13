@@ -1,0 +1,12 @@
+package first;
+import javax.swing.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// center of my future program
+		
+
+	}
+
+}

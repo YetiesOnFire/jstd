@@ -1,0 +1,25 @@
+package net;
+import java.io.IOException;
+import java.net.*;
+public class URLTest {
+
+	public static void main(String[] args)throws IOExeption {
+		try {
+			URL hp= new URL("http://www.HerbSchildt.com/Articles");
+			System.out.println("protocol"+hp.getProtocol());
+			System.out.println("port"+hp.getPort());
+			System.out.println("host"+hp.getHost());
+			System.out.println("file"+hp.getFile());
+			System.out.println("extform"+hp.toExternalForm());
+			System.out.println(hp.getContent());
+			
+		
+		} catch (MalformedURLException e) {
+			System.out.println(e);
+			
+		}
+		
+
+	}
+
+}
